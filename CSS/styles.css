@@ -4,6 +4,7 @@
   --oscuro:  #212121;
   --primario:#ffc107;
   --secundario: #0097a7;
+  --tercero:   orange;
   --gris:      #757575;
 }
 
@@ -22,9 +23,47 @@ body {
 
 .titulo span{
     font-size: 2rem;
-    color: aqua;
+    color: rgb(0, 247, 255);
 }
 
 .navegacion-principal{
+    padding-bottom: 10rem;
+    background-color: var(--tercero);
+}
+
+.contenedor{
+    width: 120rem;
+    /*Una manera de poner los 4 márgenes en 4 propiedades
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;*/
+    /*margin: 0 auto 0 auto: Tomando la sposiciones de un reloj*/
+    margin: 0 auto; /*El primer valor corresponde a top-bottom
+    y el segundo valor corresponde a right-left*/
+}
+
+.nav-bg {
     background-color: var(--secundario);
 }
+
+.navegacion-principal a{
+    color: var(--blanco);
+   background-color: var(--primario);
+   text-decoration: none;
+   display:block;
+}
+
+p{
+    background-color: var(--secundario);
+    color: var(--blanco);
+}
+
+/*experimentos que hice/*
+/*svg{
+  background-color: #757575; cambia el fondo de la imagen
+}*/
+
+.navegacion-principal{
+    padding: 2rem;
+}
+
